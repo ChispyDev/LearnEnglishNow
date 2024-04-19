@@ -11,6 +11,8 @@ let wordsListCount = 100;
  */
 let wordsList = [];
 
+
+
 /**
  * getPossibleWords method is used to fill the possible random words list
  */
@@ -35,14 +37,32 @@ async function getRandomWord(number) {
         return [];
     }
 }
-getPossibleWords();
 
 function checkWord(){
-    console.log("Checking word...")
+    const inputElem =  document.getElementById("worldInput");
+
+    if(inputElem.value==wordsList[0]){
+        console.log("Correct! ");
+    }else{
+        console.log("No! ");
+        clearInput();
+    }
+
 }
 function nextWord(){
     console.log("Generating new word...")
+    if(wordsList.length == 0){
+        getPossibleWords();
+    }else{
+        wordsList.shift()
+    }
+    clearInput()
+    console.log("New word:" +wordsList[0])
 }
 function clearInput(){
-    console.log("Cleaning input area...")
+    console.log("Cleaning input area...");
+    const inputElem =  document.getElementById("worldInput");
+    inputElem.value = "";
+
 }
+getPossibleWords();
