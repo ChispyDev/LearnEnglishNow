@@ -28,9 +28,16 @@
             <h2 id="vocabulary">Vocabulary</h2>
             <article class="english-article">
                 <header><h3>Try to correctly write the word reproduced in the following audio</h3></header>
-                <audio class="audioElem" controls src="https://api.dictionaryapi.dev/media/pronunciations/en/car-uk.mp3"></audio>
-                <p >The more vocabulary you know, the more specific conversations you will be able to understand.</p>
-                <button type="button" class="secondary">Learn Now</button>
+                <audio class="audioElem" controls src="https://api.dictionaryapi.dev/media/pronunciations/en/example-us.mp3"></audio>
+                <input type="text" name="worldInput" placeholder="Type the word" aria-label="Type the word" />
+                <form>
+                    <fieldset role="group">
+                        <button type="button">Check</button>
+                        <button type="button" class="contrast">Next</button>
+                        <button type="button" class="secondary">Clear</button>
+                    </fieldset>
+                </form>
+                
             </article>
         </section>
 
