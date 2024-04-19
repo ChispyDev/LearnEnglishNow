@@ -66,3 +66,4 @@ function clearInput(){
 
 }
 getPossibleWords();
+//api for audios "https://dictionaryapi.dev/"
