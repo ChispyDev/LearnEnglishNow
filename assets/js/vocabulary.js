@@ -35,5 +35,14 @@ async function getRandomWord(number) {
         return [];
     }
 }
-
 getPossibleWords();
+
+function checkWord(){
+    console.log("Checking word...")
+}
+function nextWord(){
+    console.log("Generating new word...")
+}
+function clearInput(){
+    console.log("Cleaning input area...")
+}
